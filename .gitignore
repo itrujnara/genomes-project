@@ -1,2 +1,8 @@
 *ncbi_dataset/
 ncbi_datasets_test/*.zip
+extract_kmers/fasta.skf
+extract_kmers/plasmodium.skf
+extract_kmers/plasmodium2.skf
+extract_kmers/plasmodium2_table.tsv
+extract_kmers/plasmodium_table.tsv
+protists_local/Toxoplasma_gondii_ME49_genomic.fna
