@@ -1,0 +1,2 @@
+Sample 1	Sample 2	Matches	Mismatches	Jaccard Index	Mash-like distance	SNPs	SNP distance
+sarscov2_reduced	plasmodium_reduced	0	2740	0	1	0	-nan

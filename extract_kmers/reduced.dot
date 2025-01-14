@@ -1,0 +1,4 @@
+graph {
+	sarscov2_reduced ;
+	plasmodium_reduced ;
+}

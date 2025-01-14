@@ -1,0 +1,12 @@
+5dc72c9eb9b795ac76f524db0a7fa159  ncbi_dataset/data/assembly_data_report.jsonl
+af5b1ef099dc8a0fb546541035e3bc04  ncbi_dataset/data/GCA_019059595.1/GCA_019059595.1_ASM1905959v1_genomic.fna
+1624a0111807a84d23dc018a9ca5eaf0  ncbi_dataset/data/GCA_027410445.1/GCA_027410445.1_aDisPic1.pri_genomic.fna
+4696ac18886538b788c5610508a27559  ncbi_dataset/data/GCA_038048745.1/GCA_038048745.1_rColCon1_p1.0_genomic.fna
+6a2d200ac037281e4747ae48bd7a0df0  ncbi_dataset/data/GCA_039654755.1/GCA_039654755.1_RI_Cla_1.0_genomic.fna
+0a0f1b3c9a1756307e9dfc172a12fdbf  ncbi_dataset/data/GCA_910589605.1/GCA_910589605.1_ilChrCulm1.1_genomic.fna
+d5d5ab4feee423a5d917320979d01d7e  ncbi_dataset/data/GCA_963662175.1/GCA_963662175.1_ihAraDepr1.1_genomic.fna
+955e93046097b7739921152174c03d00  ncbi_dataset/data/GCA_963930835.2/GCA_963930835.2_odSpoOffi2.2_genomic.fna
+6b0b360bfe62ac40c23cbd1879e33120  ncbi_dataset/data/GCA_963932275.1/GCA_963932275.1_iyAndPrae1.1_genomic.fna
+d3e3071b93b7f373e620e7a691fc9e20  ncbi_dataset/data/GCF_027791375.1/GCF_027791375.1_UM_Iind_1.1_genomic.fna
+fdf4d3ad6aa1b628000c874a87b11302  ncbi_dataset/data/GCF_036588685.1/GCF_036588685.1_PNRI_Mtr1.1.1.hap1_genomic.fna
+28ca8166908a602bd4480e5e916fe6b9  ncbi_dataset/data/dataset_catalog.json
