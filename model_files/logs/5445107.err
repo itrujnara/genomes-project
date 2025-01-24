@@ -1,0 +1,6 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:06,  3.01s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:05<00:02,  2.53s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:06<00:00,  1.98s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:06<00:00,  2.17s/it]
+Traceback (most recent call last):
+  File "/users/cn/itrujnara/genomes-project/model_files/download_evo.py", line 6, in <module>
+    evo_model = Evo("evo-1.5-8k-base").to(device)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Evo' object has no attribute 'to'
