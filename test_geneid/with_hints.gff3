@@ -1,0 +1,119 @@
+##gff-version 3
+# date Tue Apr  1 13:00:24 2025
+# source-version: geneid_v1.4 -- geneid@crg.es
+##sequence-region human_hbb 1 1980
+# Optimal Gene Structure. 1 genes. Score = 60.68 
+# Gene 1 (Forward). 3 exons. 148 aa. Score = 60.68 
+human_hbb	geneid_v1.4	gene	187	1610	60.68	+	.	ID=human_hbb_1;Name=human_hbb_1
+human_hbb	geneid_v1.4	mRNA	187	1610	60.68	+	.	ID=mRNA_human_hbb_1;Parent=human_hbb_1
+human_hbb	geneid_v1.4	CDS	187	278	11.58	+	0	ID=cds_human_hbb_1;Parent=mRNA_human_hbb_1;Target=geneid_v1.4_predicted_protein_human_hbb_1 1 31;exon_type=First;start_score=1.13;donor_score=1.80;coding_potential=6.94;homology_score=45.50
+human_hbb	geneid_v1.4	exon	187	278	11.58	+	.	ID=exon_human_hbb_1.1;Parent=mRNA_human_hbb_1;donor_score=1.80;homology_score=45.50
+human_hbb	geneid_v1.4	CDS	409	631	29.17	+	1	ID=cds_human_hbb_1;Parent=mRNA_human_hbb_1;Target=geneid_v1.4_predicted_protein_human_hbb_1 31 105;exon_type=Internal;acceptor_score=3.32;donor_score=2.86;coding_potential=16.58;homology_score=47.85
+human_hbb	geneid_v1.4	exon	409	631	29.17	+	.	ID=exon_human_hbb_1.2;Parent=mRNA_human_hbb_1;acceptor_score=3.32;donor_score=2.86;homology_score=47.85
+human_hbb	geneid_v1.4	CDS	1482	1610	19.93	+	0	ID=cds_human_hbb_1;Parent=mRNA_human_hbb_1;Target=geneid_v1.4_predicted_protein_human_hbb_1 106 148;exon_type=Terminal;acceptor_score=5.43;coding_potential=11.01;homology_score=45.29
+human_hbb	geneid_v1.4	exon	1482	1610	19.93	+	.	ID=exon_human_hbb_1.3;Parent=mRNA_human_hbb_1;acceptor_score=5.43;homology_score=45.29
+###
+##gff-version 3
+# date Tue Apr  1 13:00:24 2025
+# source-version: geneid_v1.4 -- geneid@crg.es
+##sequence-region mouse_rpl27 1 3432
+# Optimal Gene Structure. 1 genes. Score = 104.12 
+# Gene 1 (Forward). 4 exons. 138 aa. Score = 104.12 
+mouse_rpl27	geneid_v1.4	gene	526	3290	104.12	+	.	ID=mouse_rpl27_1;Name=mouse_rpl27_1
+mouse_rpl27	geneid_v1.4	mRNA	526	3290	104.12	+	.	ID=mRNA_mouse_rpl27_1;Parent=mouse_rpl27_1
+mouse_rpl27	geneid_v1.4	CDS	526	608	23.31	+	2	ID=cds_mouse_rpl27_1;Parent=mRNA_mouse_rpl27_1;Target=geneid_v1.4_predicted_protein_mouse_rpl27_1 1 28;5_prime_partial=true;exon_type=Internal;acceptor_score=5.32;donor_score=1.74;coding_potential=11.90;homology_score=43.64
+mouse_rpl27	geneid_v1.4	exon	526	608	23.31	+	.	ID=exon_mouse_rpl27_1.1;Parent=mRNA_mouse_rpl27_1;5_prime_partial=true;acceptor_score=5.32;donor_score=1.74;homology_score=43.64
+mouse_rpl27	geneid_v1.4	CDS	1304	1473	46.33	+	0	ID=cds_mouse_rpl27_1;Parent=mRNA_mouse_rpl27_1;Target=geneid_v1.4_predicted_protein_mouse_rpl27_1 29 85;exon_type=Internal;acceptor_score=5.33;donor_score=3.62;coding_potential=26.09;homology_score=47.47
+mouse_rpl27	geneid_v1.4	exon	1304	1473	46.33	+	.	ID=exon_mouse_rpl27_1.2;Parent=mRNA_mouse_rpl27_1;acceptor_score=5.33;donor_score=3.62;homology_score=47.47
+mouse_rpl27	geneid_v1.4	CDS	3023	3133	25.15	+	1	ID=cds_mouse_rpl27_1;Parent=mRNA_mouse_rpl27_1;Target=geneid_v1.4_predicted_protein_mouse_rpl27_1 85 122;exon_type=Internal;acceptor_score=2.03;donor_score=5.39;coding_potential=12.39;homology_score=47.01
+mouse_rpl27	geneid_v1.4	exon	3023	3133	25.15	+	.	ID=exon_mouse_rpl27_1.3;Parent=mRNA_mouse_rpl27_1;acceptor_score=2.03;donor_score=5.39;homology_score=47.01
+mouse_rpl27	geneid_v1.4	CDS	3242	3290	9.33	+	1	ID=cds_mouse_rpl27_1;Parent=mRNA_mouse_rpl27_1;Target=geneid_v1.4_predicted_protein_mouse_rpl27_1 122 138;exon_type=Terminal;acceptor_score=7.21;coding_potential=3.43;homology_score=30.00
+mouse_rpl27	geneid_v1.4	exon	3242	3290	9.33	+	.	ID=exon_mouse_rpl27_1.4;Parent=mRNA_mouse_rpl27_1;acceptor_score=7.21;homology_score=30.00
+###
+##gff-version 3
+# date Tue Apr  1 13:00:24 2025
+# source-version: geneid_v1.4 -- geneid@crg.es
+##sequence-region turtle_nr0b1 1 3189
+# Optimal Gene Structure. 1 genes. Score = 133.40 
+# Gene 1 (Forward). 2 exons. 278 aa. Score = 133.40 
+turtle_nr0b1	geneid_v1.4	gene	66	3089	133.40	+	.	ID=turtle_nr0b1_1;Name=turtle_nr0b1_1
+turtle_nr0b1	geneid_v1.4	mRNA	66	3089	133.40	+	.	ID=mRNA_turtle_nr0b1_1;Parent=turtle_nr0b1_1
+turtle_nr0b1	geneid_v1.4	CDS	66	652	111.18	+	1	ID=cds_turtle_nr0b1_1;Parent=mRNA_turtle_nr0b1_1;Target=geneid_v1.4_predicted_protein_turtle_nr0b1_1 1 197;5_prime_partial=true;exon_type=Internal;acceptor_score=-1.31;donor_score=3.86;coding_potential=59.76;homology_score=196.85
+turtle_nr0b1	geneid_v1.4	exon	66	652	111.18	+	.	ID=exon_turtle_nr0b1_1.1;Parent=mRNA_turtle_nr0b1_1;5_prime_partial=true;acceptor_score=-1.31;donor_score=3.86;homology_score=196.85
+turtle_nr0b1	geneid_v1.4	CDS	2845	3089	22.22	+	2	ID=cds_turtle_nr0b1_1;Parent=mRNA_turtle_nr0b1_1;Target=geneid_v1.4_predicted_protein_turtle_nr0b1_1 197 278;exon_type=Terminal;acceptor_score=6.34;coding_potential=11.38;homology_score=47.44
+turtle_nr0b1	geneid_v1.4	exon	2845	3089	22.22	+	.	ID=exon_turtle_nr0b1_1.2;Parent=mRNA_turtle_nr0b1_1;acceptor_score=6.34;homology_score=47.44
+###
+##gff-version 3
+# date Tue Apr  1 13:00:24 2025
+# source-version: geneid_v1.4 -- geneid@crg.es
+##sequence-region xenopus_cytl1 1 3665
+# Optimal Gene Structure. 1 genes. Score = 22.17 
+# Gene 1 (Forward). 3 exons. 44 aa. Score = 22.17 
+xenopus_cytl1	geneid_v1.4	gene	2596	2833	22.17	+	.	ID=xenopus_cytl1_1;Name=xenopus_cytl1_1
+xenopus_cytl1	geneid_v1.4	mRNA	2596	2833	22.17	+	.	ID=mRNA_xenopus_cytl1_1;Parent=xenopus_cytl1_1
+xenopus_cytl1	geneid_v1.4	CDS	2596	2620	8.57	+	2	ID=cds_xenopus_cytl1_1;Parent=mRNA_xenopus_cytl1_1;Target=geneid_v1.4_predicted_protein_xenopus_cytl1_1 1 9;5_prime_partial=true;exon_type=Internal;acceptor_score=5.55;donor_score=2.23;coding_potential=2.43;homology_score=28.62
+xenopus_cytl1	geneid_v1.4	exon	2596	2620	8.57	+	.	ID=exon_xenopus_cytl1_1.1;Parent=mRNA_xenopus_cytl1_1;5_prime_partial=true;acceptor_score=5.55;donor_score=2.23;homology_score=28.62
+xenopus_cytl1	geneid_v1.4	CDS	2643	2724	1.41	+	1	ID=cds_xenopus_cytl1_1;Parent=mRNA_xenopus_cytl1_1;Target=geneid_v1.4_predicted_protein_xenopus_cytl1_1 9 36;exon_type=Internal;acceptor_score=2.55;donor_score=0.43;coding_potential=4.96;homology_score=11.04
+xenopus_cytl1	geneid_v1.4	exon	2643	2724	1.41	+	.	ID=exon_xenopus_cytl1_1.2;Parent=mRNA_xenopus_cytl1_1;acceptor_score=2.55;donor_score=0.43;homology_score=11.04
+xenopus_cytl1	geneid_v1.4	CDS	2809	2833	12.20	+	0	ID=cds_xenopus_cytl1_1;Parent=mRNA_xenopus_cytl1_1;Target=geneid_v1.4_predicted_protein_xenopus_cytl1_1 37 44;3_prime_partial=true;exon_type=Internal;acceptor_score=5.63;donor_score=0.62;coding_potential=0.59;homology_score=73.31
+xenopus_cytl1	geneid_v1.4	exon	2809	2833	12.20	+	.	ID=exon_xenopus_cytl1_1.3;Parent=mRNA_xenopus_cytl1_1;3_prime_partial=true;acceptor_score=5.63;donor_score=0.62;homology_score=73.31
+###
+##gff-version 3
+# date Tue Apr  1 13:00:24 2025
+# source-version: geneid_v1.4 -- geneid@crg.es
+##sequence-region danio_yipf5 1 8406
+# Optimal Gene Structure. 3 genes. Score = 78.01 
+# Gene 1 (Forward). 2 exons. 100 aa. Score = 17.48 
+danio_yipf5	geneid_v1.4	gene	1707	2876	17.48	+	.	ID=danio_yipf5_1;Name=danio_yipf5_1
+danio_yipf5	geneid_v1.4	mRNA	1707	2876	17.48	+	.	ID=mRNA_danio_yipf5_1;Parent=danio_yipf5_1
+danio_yipf5	geneid_v1.4	CDS	1707	1766	4.74	+	1	ID=cds_danio_yipf5_1;Parent=mRNA_danio_yipf5_1;Target=geneid_v1.4_predicted_protein_danio_yipf5_1 1 21;5_prime_partial=true;exon_type=Internal;acceptor_score=1.52;donor_score=0.61;coding_potential=5.48;homology_score=31.60
+danio_yipf5	geneid_v1.4	exon	1707	1766	4.74	+	.	ID=exon_danio_yipf5_1.1;Parent=mRNA_danio_yipf5_1;5_prime_partial=true;acceptor_score=1.52;donor_score=0.61;homology_score=31.60
+danio_yipf5	geneid_v1.4	CDS	2639	2876	12.74	+	1	ID=cds_danio_yipf5_1;Parent=mRNA_danio_yipf5_1;Target=geneid_v1.4_predicted_protein_danio_yipf5_1 21 100;exon_type=Terminal;acceptor_score=-1.78;coding_potential=2.09;homology_score=129.30
+danio_yipf5	geneid_v1.4	exon	2639	2876	12.74	+	.	ID=exon_danio_yipf5_1.2;Parent=mRNA_danio_yipf5_1;acceptor_score=-1.78;homology_score=129.30
+###
+# Gene 2 (Forward). 3 exons. 115 aa. Score = 16.54 
+danio_yipf5	geneid_v1.4	gene	3386	4615	16.54	+	.	ID=danio_yipf5_2;Name=danio_yipf5_2
+danio_yipf5	geneid_v1.4	mRNA	3386	4615	16.54	+	.	ID=mRNA_danio_yipf5_2;Parent=danio_yipf5_2
+danio_yipf5	geneid_v1.4	CDS	3386	3439	-1.39	+	0	ID=cds_danio_yipf5_2;Parent=mRNA_danio_yipf5_2;Target=geneid_v1.4_predicted_protein_danio_yipf5_2 1 18;exon_type=First;start_score=-1.44;donor_score=-0.67;coding_potential=5.57;homology_score=27.31
+danio_yipf5	geneid_v1.4	exon	3386	3439	-1.39	+	.	ID=exon_danio_yipf5_2.1;Parent=mRNA_danio_yipf5_2;donor_score=-0.67;homology_score=27.31
+danio_yipf5	geneid_v1.4	CDS	3942	4074	11.56	+	0	ID=cds_danio_yipf5_2;Parent=mRNA_danio_yipf5_2;Target=geneid_v1.4_predicted_protein_danio_yipf5_2 19 63;exon_type=Internal;acceptor_score=-3.14;donor_score=3.93;coding_potential=4.60;homology_score=84.40
+danio_yipf5	geneid_v1.4	exon	3942	4074	11.56	+	.	ID=exon_danio_yipf5_2.2;Parent=mRNA_danio_yipf5_2;acceptor_score=-3.14;donor_score=3.93;homology_score=84.40
+danio_yipf5	geneid_v1.4	CDS	4458	4615	6.37	+	2	ID=cds_danio_yipf5_2;Parent=mRNA_danio_yipf5_2;Target=geneid_v1.4_predicted_protein_danio_yipf5_2 63 115;exon_type=Terminal;acceptor_score=-5.46;coding_potential=6.36;homology_score=94.33
+danio_yipf5	geneid_v1.4	exon	4458	4615	6.37	+	.	ID=exon_danio_yipf5_2.3;Parent=mRNA_danio_yipf5_2;acceptor_score=-5.46;homology_score=94.33
+###
+# Gene 3 (Forward). 3 exons. 99 aa. Score = 43.99 
+danio_yipf5	geneid_v1.4	gene	5847	7830	43.99	+	.	ID=danio_yipf5_3;Name=danio_yipf5_3
+danio_yipf5	geneid_v1.4	mRNA	5847	7830	43.99	+	.	ID=mRNA_danio_yipf5_3;Parent=danio_yipf5_3
+danio_yipf5	geneid_v1.4	CDS	5847	5877	-4.34	+	0	ID=cds_danio_yipf5_3;Parent=mRNA_danio_yipf5_3;Target=geneid_v1.4_predicted_protein_danio_yipf5_3 1 11;exon_type=First;start_score=-0.27;donor_score=-0.39;coding_potential=0.75;homology_score=34.88
+danio_yipf5	geneid_v1.4	exon	5847	5877	-4.34	+	.	ID=exon_danio_yipf5_3.1;Parent=mRNA_danio_yipf5_3;donor_score=-0.39;homology_score=34.88
+danio_yipf5	geneid_v1.4	CDS	7376	7571	25.86	+	2	ID=cds_danio_yipf5_3;Parent=mRNA_danio_yipf5_3;Target=geneid_v1.4_predicted_protein_danio_yipf5_3 11 76;exon_type=Internal;acceptor_score=-2.49;donor_score=-2.48;coding_potential=-0.38;homology_score=241.65
+danio_yipf5	geneid_v1.4	exon	7376	7571	25.86	+	.	ID=exon_danio_yipf5_3.2;Parent=mRNA_danio_yipf5_3;acceptor_score=-2.49;donor_score=-2.48;homology_score=241.65
+danio_yipf5	geneid_v1.4	CDS	7761	7830	22.46	+	1	ID=cds_danio_yipf5_3;Parent=mRNA_danio_yipf5_3;Target=geneid_v1.4_predicted_protein_danio_yipf5_3 76 99;exon_type=Terminal;acceptor_score=1.01;coding_potential=4.12;homology_score=143.60
+danio_yipf5	geneid_v1.4	exon	7761	7830	22.46	+	.	ID=exon_danio_yipf5_3.3;Parent=mRNA_danio_yipf5_3;acceptor_score=1.01;homology_score=143.60
+###
+##gff-version 3
+# date Tue Apr  1 13:00:24 2025
+# source-version: geneid_v1.4 -- geneid@crg.es
+##sequence-region drosophila_fnta 1 1680
+# Optimal Gene Structure. 1 genes. Score = 74.35 
+# Gene 1 (Reverse). 3 exons. 332 aa. Score = 74.35 
+drosophila_fnta	geneid_v1.4	gene	371	1494	74.35	-	.	ID=drosophila_fnta_1;Name=drosophila_fnta_1
+drosophila_fnta	geneid_v1.4	mRNA	371	1494	74.35	-	.	ID=mRNA_drosophila_fnta_1;Parent=drosophila_fnta_1
+drosophila_fnta	geneid_v1.4	CDS	371	866	48.34	-	1	ID=cds_drosophila_fnta_1;Parent=mRNA_drosophila_fnta_1;Target=geneid_v1.4_predicted_protein_drosophila_fnta_1 167 332;exon_type=Terminal;acceptor_score=1.52;coding_potential=69.62;homology_score=-196.80
+drosophila_fnta	geneid_v1.4	exon	371	866	48.34	-	.	ID=exon_drosophila_fnta_1.3;Parent=mRNA_drosophila_fnta_1;acceptor_score=1.52;homology_score=-196.80
+drosophila_fnta	geneid_v1.4	CDS	927	1287	21.66	-	2	ID=cds_drosophila_fnta_1;Parent=mRNA_drosophila_fnta_1;Target=geneid_v1.4_predicted_protein_drosophila_fnta_1 47 167;exon_type=Internal;acceptor_score=0.36;donor_score=2.39;coding_potential=41.49;homology_score=-144.00
+drosophila_fnta	geneid_v1.4	exon	927	1287	21.66	-	.	ID=exon_drosophila_fnta_1.2;Parent=mRNA_drosophila_fnta_1;acceptor_score=0.36;donor_score=2.39;homology_score=-144.00
+drosophila_fnta	geneid_v1.4	CDS	1356	1494	4.36	-	0	ID=cds_drosophila_fnta_1;Parent=mRNA_drosophila_fnta_1;Target=geneid_v1.4_predicted_protein_drosophila_fnta_1 1 47;exon_type=First;start_score=4.98;donor_score=1.22;coding_potential=12.01;homology_score=-55.20
+drosophila_fnta	geneid_v1.4	exon	1356	1494	4.36	-	.	ID=exon_drosophila_fnta_1.1;Parent=mRNA_drosophila_fnta_1;donor_score=1.22;homology_score=-55.20
+###
+##gff-version 3
+# date Tue Apr  1 13:00:24 2025
+# source-version: geneid_v1.4 -- geneid@crg.es
+##sequence-region yeast_uso1 1 5573
+# Optimal Gene Structure. 1 genes. Score = 514.56 
+# Gene 1 (Forward). 1 exons. 1791 aa. Score = 514.56 
+yeast_uso1	geneid_v1.4	gene	101	5473	514.56	+	.	ID=yeast_uso1_1;Name=yeast_uso1_1
+yeast_uso1	geneid_v1.4	mRNA	101	5473	514.56	+	.	ID=mRNA_yeast_uso1_1;Parent=yeast_uso1_1
+yeast_uso1	geneid_v1.4	CDS	101	5473	514.56	+	0	ID=cds_yeast_uso1_1;Parent=mRNA_yeast_uso1_1;Target=geneid_v1.4_predicted_protein_yeast_uso1_1 1 1791;exon_type=Single;start_score=0.30;coding_potential=362.42;homology_score=154.74
+yeast_uso1	geneid_v1.4	exon	101	5473	514.56	+	.	ID=exon_yeast_uso1_1.1;Parent=mRNA_yeast_uso1_1;start_score=0.30;homology_score=154.74
+###
