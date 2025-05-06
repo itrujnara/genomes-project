@@ -1,0 +1,23 @@
+##gff-version 3
+human_hbb	ensembl	CDS	187	278	.	+	.	ID=exon_0_0
+human_hbb	ensembl	CDS	409	631	.	+	.	ID=exon_0_1
+human_hbb	ensembl	CDS	1482	1610	.	+	.	ID=exon_0_2
+mouse_rpl27	ensembl	CDS	527	607	.	+	.	ID=exon_1_0
+mouse_rpl27	ensembl	CDS	1303	1472	.	+	.	ID=exon_1_1
+mouse_rpl27	ensembl	CDS	3022	3132	.	+	.	ID=exon_1_2
+mouse_rpl27	ensembl	CDS	3241	3289	.	+	.	ID=exon_1_3
+turtle_nr0b1	ensembl	CDS	100	344	.	+	.	ID=exon_2_0
+turtle_nr0b1	ensembl	CDS	2537	2910	.	+	.	ID=exon_2_1
+turtle_nr0b1	ensembl	CDS	2991	3088	.	+	.	ID=exon_2_2
+xenopus_cytl1	ensembl	CDS	152	358	.	+	.	ID=exon_3_0
+xenopus_cytl1	ensembl	CDS	449	493	.	+	.	ID=exon_3_1
+xenopus_cytl1	ensembl	CDS	2595	2891	.	+	.	ID=exon_3_2
+danio_yipf5	ensembl	CDS	657	819	.	+	.	ID=exon_4_0
+danio_yipf5	ensembl	CDS	980	1161	.	+	.	ID=exon_4_1
+danio_yipf5	ensembl	CDS	2739	2884	.	+	.	ID=exon_4_2
+danio_yipf5	ensembl	CDS	4475	4650	.	+	.	ID=exon_4_3
+danio_yipf5	ensembl	CDS	6460	6566	.	+	.	ID=exon_4_4
+drosophila_fnta	ensembl	CDS	370	865	.	+	.	ID=exon_5_0
+drosophila_fnta	ensembl	CDS	926	1286	.	+	.	ID=exon_5_1
+drosophila_fnta	ensembl	CDS	1355	1493	.	+	.	ID=exon_5_2
+yeast_uso1	ensembl	CDS	100	5472	.	+	.	ID=exon_6_0

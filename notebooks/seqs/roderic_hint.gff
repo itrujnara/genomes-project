@@ -1,0 +1,6 @@
+##gff-version 3
+mystery_seq	evo2	exon	185	284	50	+	.	.
+mystery_seq	evo2	exon	406	637	50	+	.	.
+mystery_seq	evo2	exon	1040	1096	50	+	.	.
+mystery_seq	evo2	exon	1103	1117	50	+	.	.
+mystery_seq	evo2	exon	1478	1615	50	+	.	.
