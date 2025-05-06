@@ -10,3 +10,12 @@ logs/
 notebooks/wandb/
 notebooks/data/
 notebooks/hyena-gpt-shakespeare/
+**/work/
+download_genomes/test_out
+download_genomes/singularity_cache/community-cr-prod.seqera.io-docker-registry-v2-blobs-sha256-5f-5f0edcb035b00982b0f00d0d0bfe4f69bdc1ad97de9fdcad0176993689f6c6bc-data.img
+**/.nextflow/
+**/.nextflow.log*
+**/.ipynb_checkpoints/
+**/__pycache__/
+**/singularity_cache/
+get_kmers/out/
