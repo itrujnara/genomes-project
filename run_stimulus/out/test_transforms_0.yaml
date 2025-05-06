@@ -1,0 +1,32 @@
+global_params:
+  seed: 42
+columns:
+- column_name: id
+  column_type: meta
+  encoder:
+  - name: TextAsciiEncoder
+    params:
+      vocab_size: 512
+      dtype: int64
+      max_len: 1024
+- column_name: seq
+  column_type: input
+  encoder:
+  - name: TextAsciiEncoder
+    params:
+      vocab_size: 512
+      dtype: int64
+      max_len: 8192
+transforms:
+  transformation_name: reverse_complement
+  columns:
+  - column_name: seq
+    transformations:
+    - name: ReverseComplement
+      params: {}
+split:
+  split_method: RandomSplit
+  params:
+    split: [0.6, 0.2, 0.2]
+  split_input_columns:
+  - seq
