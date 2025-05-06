@@ -1,0 +1,1 @@
+nextflow run itrujnara/getgenomes -r dev -c crg.config -c platform.config -profile singularity -params-file params.yml --input samplesheet.csv --outdir test_out --monochrome-logs -bg > nextflow.log 2> nextflow.err

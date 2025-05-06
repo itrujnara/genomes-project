@@ -1,0 +1,235 @@
+N E X T F L O W  ~  version 24.04.4
+Pulling itrujnara/getgenomes ...
+ downloaded from https://github.com/itrujnara/getgenomes.git
+Launching `https://github.com/itrujnara/getgenomes` [distracted_bassi] DSL2 - revision: 795199fe3e [dev]
+[1mInput/output options[0m
+  [0;34minput                     : [0;32msamplesheet.csv[0m
+  [0;34mbase_url                  : [0;32mftp://download.cncb.ac.cn/gwh/Protists/[0m
+  [0;34moutdir                    : [0;32mtest_out[0m
+
+[1mInstitutional config options[0m
+  [0;34mconfig_profile_name       : [0;32mCRG profile[0m
+  [0;34mconfig_profile_description: [0;32mConfiguration to run on CRG cluster[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrevision                  : [0;32mdev[0m
+  [0;34mrunName                   : [0;32mdistracted_bassi[0m
+  [0;34mcontainerEngine           : [0;32msingularity[0m
+  [0;34mlaunchDir                 : [0;32m/nfs/users/cn/itrujnara/download_genomes[0m
+  [0;34mworkDir                   : [0;32m/nfs/users/cn/itrujnara/download_genomes/work[0m
+  [0;34mprojectDir                : [0;32m/users/cn/itrujnara/.nextflow/assets/itrujnara/getgenomes[0m
+  [0;34muserName                  : [0;32mitrujnara[0m
+  [0;34mprofile                   : [0;32msingularity[0m
+  [0;34mconfigFiles               : [0;32m[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+WARN: The following invalid input values have been detected:
+
+* --monochrome-logs: true
+* --monochromeLogs: true
+* --max_cpus: 64
+* --max_memory: 100 GB
+* --max_time: 2d
+
+
+Monitor the execution with Seqera Platform using this URL: https://cloud.seqera.io/user/igor-trujnara/watch/DGbMaJ5sOavqc
+[6b/2a3b8b] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:PARTITION_IDS (p10k)
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_00.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_01.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_02.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_03.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_04.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_05.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_06.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_07.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_08.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_09.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_10.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_11.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_12.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_13.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_14.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_15.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_16.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_17.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_18.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_19.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_20.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_21.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_22.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_23.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_24.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_25.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_26.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_27.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_28.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_29.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_30.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_31.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_32.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_33.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_34.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_35.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_36.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_37.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_38.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_39.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_40.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_41.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_42.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_43.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_44.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_45.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_46.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_47.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_48.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_49.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_50.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_51.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_52.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_53.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_54.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_55.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_56.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_57.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_58.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_59.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_60.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_61.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_62.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_63.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_64.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_65.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_66.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_67.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_68.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_69.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_70.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_71.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_72.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_73.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_74.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_75.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_76.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_77.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_78.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_79.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_80.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_81.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_82.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_83.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_84.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_85.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_86.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_87.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_88.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_89.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_9000.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_9001.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_9002.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_9003.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_9004.txt]
+[[id:p10k], /nfs/users/cn/itrujnara/download_genomes/work/6b/2a3b8b0b0e8ce94cffcd0c362f64d8/p10k_chunk_9005.txt]
+[96/68d348] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[26/71b534] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[89/4a03c2] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[9c/711f25] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[62/87c023] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[9d/dc4e2e] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[91/433496] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[20/e9a743] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[f6/bf7060] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[04/c61c4c] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[d1/7d18fc] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[96/9b87ef] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[d8/49c1ad] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[11/f23e91] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[04/957ce7] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[49/ea4c6b] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[cf/fe78a3] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[e2/1f9493] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[16/9e9113] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[7f/5d6dea] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[74/110398] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[8b/d58125] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[1d/5d3ce3] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[3d/dd1830] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[30/31c7bf] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[c0/337f50] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[a6/b07369] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[48/e4bd08] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[11/679bcc] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[08/acb9dc] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[10/dd6cac] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[21/7c8174] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[43/c8f82e] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[ab/fa3b66] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[71/41bac4] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[db/fad6f3] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[19/8060ee] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[4a/8bb8c2] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[6d/265488] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[9e/d28832] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[b2/be0b22] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[df/7ae020] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[42/26e57f] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[0b/e5e3ea] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[c2/ac27ef] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[42/3f87d5] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[25/8ae312] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[ba/6dde1d] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[3a/f1f949] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[32/27c8ea] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[b6/2e1642] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[04/aec157] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[7c/020ec6] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[9a/fd4fe4] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[49/11a49c] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[4f/4bbd63] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[87/609922] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[54/094273] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[d0/1b5382] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[7e/88a598] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[98/425fc7] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[d7/7a204c] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[60/c59dde] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[21/57973a] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[2a/156b44] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[80/6b3fca] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[4a/a8f2d7] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[4c/cb2b39] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[52/7393a5] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[11/635448] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[4d/afdda7] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[bb/f1241d] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[84/5aed56] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[4f/fe0fb5] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[0e/2854a7] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[bf/7dcadc] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[fd/773ead] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[6a/a45d5c] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[f8/2197e4] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[ca/c45a38] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[ec/af8535] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[a3/e0ab29] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[d5/ddae36] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[25/1c1814] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[ec/43ae65] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[de/c2aad4] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[cf/8205dc] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[b3/5e9ac1] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[ba/51f1ea] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[b9/83d683] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[86/193960] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[81/f839e3] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[c2/795c70] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[e0/e602ed] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[23/d30f4e] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[27/50184b] Submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[81/f839e3] NOTE: Missing output file(s) `*/*.fasta.gz` expected by process `ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)` -- Execution is retried (1)
+[07/fe4c77] Re-submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[0e/2854a7] NOTE: Missing output file(s) `*/*.fasta.gz` expected by process `ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)` -- Execution is retried (1)
+[d4/c10f8a] Re-submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
+[c2/ac27ef] NOTE: Missing output file(s) `*/*.fasta.gz` expected by process `ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)` -- Execution is retried (1)
+[d0/a094eb] Re-submitted process > ITRUJNARA_GETGENOMES:GETGENOMES:FETCH_GENOMES (p10k)
