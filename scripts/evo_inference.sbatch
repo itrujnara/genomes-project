@@ -18,4 +18,4 @@ module load CUDA
 source /users/cn/itrujnara/envs/venv_gpu/bin/activate
 
 # script
-python3 evo_inference.py $*
+python3 /users/cn/itrujnara/genomes-project/scripts/evo_inference.py $*

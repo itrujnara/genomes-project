@@ -19,4 +19,4 @@ module load cuDNN
 source /users/cn/itrujnara/envs/evo2/bin/activate
 
 # script
-python3 evo2_inference.py $*
+python3 /users/cn/itrujnara/genomes-project/scripts/evo2_inference.py $*
