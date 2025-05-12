@@ -1,0 +1,185 @@
+                            05/07/2025 at 14h05m17s                             
+
+
+ ------------------------------------------------------------------------------
+|   Another GFF Analysis Toolkit (AGAT) - Version: v1.4.1                      |
+|   https://github.com/NBISweden/AGAT                                          |
+|   National Bioinformatics Infrastructure Sweden (NBIS) - www.nbis.se         |
+ ------------------------------------------------------------------------------
+                                        
+                                       
+                          ------ Start parsing ------                           
+-------------------------- parse options and metadata --------------------------
+=> Accessing the feature_levels YAML file
+Using standard /usr/local/lib/perl5/site_perl/auto/share/dist/AGAT/feature_levels.yaml file
+=> Attribute used to group features when no Parent/ID relationship exists (i.e common tag):
+	* locus_tag
+	* gene_id
+=> merge_loci option deactivated
+=> Machine information:
+	This script is being run by perl v5.32.1
+	Bioperl location being used: /usr/local/lib/perl5/site_perl/Bio/
+	Operating system being used: linux 
+=> Accessing Ontology
+	No ontology accessible from the gff file header!
+	We use the SOFA ontology distributed with AGAT:
+		/usr/local/lib/perl5/site_perl/auto/share/dist/AGAT/so.obo
+	Read ontology /usr/local/lib/perl5/site_perl/auto/share/dist/AGAT/so.obo:
+		4 root terms, and 2596 total terms, and 1516 leaf terms
+	Filtering ontology:
+The feature type (3rd column) is constrained to be either a term from the Sequence Ontology or an SO accession number. The latter alternative is distinguished using the syntax SO:000000. In either case, it must be sequence_feature (SO:0000110) or an is_a child of it.
+We filter the ontology to apply this rule.		We found 1861 terms that are sequence_feature or is_a child of it.
+--------------------------------- parsing file ---------------------------------
+=> Number of line in file: 1284
+=> Number of comment lines: 1
+=> Fasta included: No
+=> Number of features lines: 1283
+=> Number of feature type (3rd column): 5
+	* Level1: 1 => gene
+	* level2: 2 => mRNA transcript
+	* level3: 2 => exon CDS
+	* unknown: 0 => 
+=> Version of the Bioperl GFF parser selected by AGAT: 3
+
+                  ------ End parsing (done in 0 second) ------                  
+
+
+                           ------ Start checks ------                           
+---------------------------- Check1: feature types -----------------------------
+----------------------------------- ontology -----------------------------------
+All feature types in agreement with the Ontology.
+------------------------------------- agat -------------------------------------
+AGAT can deal with all the encountered feature types (3rd column)
+------------------------------ done in 0 seconds -------------------------------
+
+------------------------------ Check2: duplicates ------------------------------
+Duplicates detected! (Same chr/contig/scaffold, same position, same ID)
+NC_000020.11	BestRefSeq%2CGnomon	gene	20389530	20712644	.	-	.	Dbxref "GeneID:57186"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-gene-1"  ; Name RALGAPA2 ; description "Ral GTPase activating protein catalytic subunit alpha 2"  ; gbkey Gene ; gene RALGAPA2 ; gene_biotype protein_coding ; gene_synonym AS250 "bA287B20.1"  C20orf74 dJ1049G11 "dJ1049G11.4"  p220
+Removed 1 duplicated gene features for a total of 1 duplicates.
+------------------------------ done in 0 seconds -------------------------------
+
+-------------------------- Check3: sequential bucket ---------------------------
+Nothing to check as sequential bucket!
+------------------------------ done in 0 seconds -------------------------------
+
+--------------------------- Check4: l2 linked to l3 ----------------------------
+No problem found
+------------------------------ done in 0 seconds -------------------------------
+
+--------------------------- Check5: l1 linked to l2 ----------------------------
+No problem found
+------------------------------ done in 0 seconds -------------------------------
+
+--------------------------- Check6: remove orphan l1 ---------------------------
+We remove only those not supposed to be orphan
+None found
+------------------------------ done in 0 seconds -------------------------------
+
+------------------------- Check7: all level3 locations -------------------------
+------------------------------ done in 0 seconds -------------------------------
+
+------------------------------ Check8: check cds -------------------------------
+No problem found
+------------------------------ done in 0 seconds -------------------------------
+
+----------------------------- Check9: check exons ------------------------------
+No exons created
+No exons locations modified
+No supernumerary exons removed
+No level2 locations modified
+------------------------------ done in 0 seconds -------------------------------
+
+----------------------------- Check10: check utrs ------------------------------
+Create one UTR for rna-nm_020343.4
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393253	.	-	.	Dbxref "Ensembl:ENST00000202677.12"  "GeneID:57186"  "GenBank:NM_020343.4"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-1"  ; Parent "rna-NM_020343.4"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2"  ; tag "MANE Select"  ; transcript_id "NM_020343.4" 
+Create one UTR for rna-nm_020343.4
+:NC_000020.11	AGAT	three_prime_UTR	20396695	20396729	.	-	.	Dbxref "Ensembl:ENST00000202677.12"  "GeneID:57186"  "GenBank:NM_020343.4"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-2"  ; Parent "rna-NM_020343.4"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2"  ; tag "MANE Select"  ; transcript_id "NM_020343.4" 
+Create one UTR for rna-nm_020343.4
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "Ensembl:ENST00000202677.12"  "GeneID:57186"  "GenBank:NM_020343.4"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-1"  ; Parent "rna-NM_020343.4"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2"  ; tag "MANE Select"  ; transcript_id "NM_020343.4" 
+Create one UTR for rna-xm_005260768.3
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393098	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_005260768.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-3"  ; Parent "rna-XM_005260768.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X2"  ; transcript_id "XM_005260768.3" 
+Create one UTR for rna-xm_005260768.3
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_005260768.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-2"  ; Parent "rna-XM_005260768.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X2"  ; transcript_id "XM_005260768.3" 
+Create one UTR for rna-xm_006723598.2
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393098	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_006723598.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-4"  ; Parent "rna-XM_006723598.2"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X1"  ; transcript_id "XM_006723598.2" 
+Create one UTR for rna-xm_006723598.2
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_006723598.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-3"  ; Parent "rna-XM_006723598.2"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X1"  ; transcript_id "XM_006723598.2" 
+Create one UTR for rna-xm_006723599.2
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393253	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_006723599.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-5"  ; Parent "rna-XM_006723599.2"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X5"  ; transcript_id "XM_006723599.2" 
+Create one UTR for rna-xm_006723599.2
+:NC_000020.11	AGAT	three_prime_UTR	20396695	20396729	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_006723599.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-6"  ; Parent "rna-XM_006723599.2"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X5"  ; transcript_id "XM_006723599.2" 
+Create one UTR for rna-xm_006723599.2
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_006723599.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-4"  ; Parent "rna-XM_006723599.2"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X5"  ; transcript_id "XM_006723599.2" 
+Create one UTR for rna-xm_011529309.2
+:NC_000020.11	AGAT	three_prime_UTR	20441132	20441692	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529309.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-7"  ; Parent "rna-XM_011529309.2"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X8"  ; transcript_id "XM_011529309.2" 
+Create one UTR for rna-xm_011529309.2
+:NC_000020.11	AGAT	three_prime_UTR	20472756	20472803	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529309.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-8"  ; Parent "rna-XM_011529309.2"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X8"  ; transcript_id "XM_011529309.2" 
+Create one UTR for rna-xm_011529309.2
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529309.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-5"  ; Parent "rna-XM_011529309.2"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X8"  ; transcript_id "XM_011529309.2" 
+Create one UTR for rna-xm_011529310.3
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393098	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529310.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-9"  ; Parent "rna-XM_011529310.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X13"  ; transcript_id "XM_011529310.3" 
+Create one UTR for rna-xm_011529310.3
+:NC_000020.11	AGAT	five_prime_UTR	20640765	20640878	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529310.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-6"  ; Parent "rna-XM_011529310.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X13"  ; transcript_id "XM_011529310.3" 
+Create one UTR for rna-xm_011529310.3
+:NC_000020.11	AGAT	five_prime_UTR	20643506	20643549	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529310.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-7"  ; Parent "rna-XM_011529310.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X13"  ; transcript_id "XM_011529310.3" 
+Create one UTR for rna-xm_011529310.3
+:NC_000020.11	AGAT	five_prime_UTR	20653530	20653587	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529310.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-8"  ; Parent "rna-XM_011529310.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X13"  ; transcript_id "XM_011529310.3" 
+Create one UTR for rna-xm_011529310.3
+:NC_000020.11	AGAT	five_prime_UTR	20712375	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529310.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-9"  ; Parent "rna-XM_011529310.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X13"  ; transcript_id "XM_011529310.3" 
+Create one UTR for rna-xm_011529311.3
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393098	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529311.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-10"  ; Parent "rna-XM_011529311.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X17"  ; transcript_id "XM_011529311.3" 
+Create one UTR for rna-xm_011529311.3
+:NC_000020.11	AGAT	five_prime_UTR	20602664	20605153	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_011529311.3"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-10"  ; Parent "rna-XM_011529311.3"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X17"  ; transcript_id "XM_011529311.3" 
+Create one UTR for rna-xm_017027977.2
+:NC_000020.11	AGAT	three_prime_UTR	20571581	20571613	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_017027977.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-11"  ; Parent "rna-XM_017027977.2"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X21"  ; transcript_id "XM_017027977.2" 
+Create one UTR for rna-xm_017027977.2
+:NC_000020.11	AGAT	three_prime_UTR	20571848	20571885	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_017027977.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-12"  ; Parent "rna-XM_017027977.2"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X21"  ; transcript_id "XM_017027977.2" 
+Create one UTR for rna-xm_017027977.2
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_017027977.2"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-11"  ; Parent "rna-XM_017027977.2"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X21"  ; transcript_id "XM_017027977.2" 
+Create one UTR for rna-xm_047440319.1
+:NC_000020.11	AGAT	three_prime_UTR	20472630	20472803	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440319.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-13"  ; Parent "rna-XM_047440319.1"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X7"  ; transcript_id "XM_047440319.1" 
+Create one UTR for rna-xm_047440319.1
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440319.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-12"  ; Parent "rna-XM_047440319.1"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X7"  ; transcript_id "XM_047440319.1" 
+Create one UTR for rna-xm_047440320.1
+:NC_000020.11	AGAT	three_prime_UTR	20423679	20441101	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440320.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-14"  ; Parent "rna-XM_047440320.1"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X9"  ; transcript_id "XM_047440320.1" 
+Create one UTR for rna-xm_047440320.1
+:NC_000020.11	AGAT	three_prime_UTR	20472756	20472803	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440320.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-15"  ; Parent "rna-XM_047440320.1"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X9"  ; transcript_id "XM_047440320.1" 
+Create one UTR for rna-xm_047440320.1
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440320.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-13"  ; Parent "rna-XM_047440320.1"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X9"  ; transcript_id "XM_047440320.1" 
+Create one UTR for rna-xm_047440321.1
+:NC_000020.11	AGAT	three_prime_UTR	20441132	20441692	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440321.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-16"  ; Parent "rna-XM_047440321.1"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X12"  ; transcript_id "XM_047440321.1" 
+Create one UTR for rna-xm_047440321.1
+:NC_000020.11	AGAT	three_prime_UTR	20472756	20472803	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440321.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-17"  ; Parent "rna-XM_047440321.1"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X12"  ; transcript_id "XM_047440321.1" 
+Create one UTR for rna-xm_047440321.1
+:NC_000020.11	AGAT	five_prime_UTR	20712481	20712644	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440321.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-14"  ; Parent "rna-XM_047440321.1"  ; experiment "COORDINATES: polyA evidence [ECO:0006239]"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X12"  ; transcript_id "XM_047440321.1" 
+Create one UTR for rna-xm_047440322.1
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393098	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440322.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-18"  ; Parent "rna-XM_047440322.1"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X16"  ; transcript_id "XM_047440322.1" 
+Create one UTR for rna-xm_047440322.1
+:NC_000020.11	AGAT	five_prime_UTR	20616046	20616121	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440322.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-15"  ; Parent "rna-XM_047440322.1"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X16"  ; transcript_id "XM_047440322.1" 
+Create one UTR for rna-xm_047440323.1
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393098	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440323.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-19"  ; Parent "rna-XM_047440323.1"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X18"  ; transcript_id "XM_047440323.1" 
+Create one UTR for rna-xm_047440323.1
+:NC_000020.11	AGAT	five_prime_UTR	20616046	20616193	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440323.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-16"  ; Parent "rna-XM_047440323.1"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X18"  ; transcript_id "XM_047440323.1" 
+Create one UTR for rna-xm_047440324.1
+:NC_000020.11	AGAT	three_prime_UTR	20389530	20393098	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440324.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-three_prime_utr-20"  ; Parent "rna-XM_047440324.1"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X19"  ; transcript_id "XM_047440324.1" 
+Create one UTR for rna-xm_047440324.1
+:NC_000020.11	AGAT	five_prime_UTR	20602664	20605152	.	-	.	Dbxref "GeneID:57186"  "GenBank:XM_047440324.1"  "HGNC:HGNC:16207"  "MIM:618836"  ; ID "agat-five_prime_utr-17"  ; Parent "rna-XM_047440324.1"  ; gbkey mRNA ; gene RALGAPA2 ; product "Ral GTPase activating protein catalytic subunit alpha 2, transcript variant X19"  ; transcript_id "XM_047440324.1" 
+37 UTRs created that were missing
+No UTRs locations modified
+No supernumerary UTRs removed
+------------------------------ done in 0 seconds -------------------------------
+
+------------------------ Check11: all level2 locations -------------------------
+No problem found
+------------------------------ done in 0 seconds -------------------------------
+
+------------------------ Check12: all level1 locations -------------------------
+No problem found
+------------------------------ done in 0 seconds -------------------------------
+
+---------------------- Check13: remove identical isoforms ----------------------
+None found
+------------------------------ done in 0 seconds -------------------------------
+                  ------ End checks (done in 0 second) ------                   
+
+

@@ -1,0 +1,4 @@
+efbb22cd60429b113e64b70e8fb34a64  ncbi_dataset/data/assembly_data_report.jsonl
+23d1867353dd3556bea198b5ad67ba6d  ncbi_dataset/data/GCF_000951045.1/GCF_000951045.1_Mleu.le_1.0_genomic.fna
+ddb92a40e29f332d4d4f7afaacbf91a4  ncbi_dataset/data/GCF_000951045.1/genomic.gff
+97e12fde25e4847db5e9ac58d338ac16  ncbi_dataset/data/dataset_catalog.json
