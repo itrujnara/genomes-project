@@ -20,3 +20,9 @@ download_genomes/singularity_cache/community-cr-prod.seqera.io-docker-registry-v
 **/singularity_cache/
 get_kmers/out/
 random_genes/primate/ncbi_dataset.zip
+**/*.fa
+**/*.fna
+**/*.pq
+**/*.safetensors
+infer_chromosome/ch38_data
+notebooks/sliding_window.ipynb
