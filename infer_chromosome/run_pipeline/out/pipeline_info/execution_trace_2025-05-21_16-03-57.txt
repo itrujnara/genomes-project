@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	af/f02ae2	907885	ITRUJNARA_NFEVO2:NFEVO2:MAKECHUNKS (chr21)	COMPLETED	0	2025-05-21 16:04:11.955	4.3s	3.9s	15.1%	422.7 MB	3.3 GB	5.2 MB	18.4 MB
