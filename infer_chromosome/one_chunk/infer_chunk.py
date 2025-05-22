@@ -4,6 +4,7 @@ import argparse
 from copy import deepcopy
 from functools import wraps
 import random
+import sys
 from time import perf_counter_ns
 
 from Bio import SeqIO
@@ -18,6 +19,7 @@ def make_parser():
 
     parser.add_argument("--parquet", help="Path to the Parquet file with the sequence")
     parser.add_argument("--id", help="ID of the sequence to analyze")
+    parser.add_argument("--model", default="evo2_7b_base", help="Evo 2 checkpoint to use")
     parser.add_argument("--context", type=int, default=8192, help="Context size")
     parser.add_argument("--stride", type=int, default=128, help="Sliding window stride")
     parser.add_argument("--prefix", default="evo", help="Prefix for file disambiguation")
@@ -49,6 +51,8 @@ def infer_sliding(model, tokenizer, seq, context_size, stride, device):
 
     for start in range(0, total_len - context_size, stride):
         print(f"{start}/{total_len-context_size}")
+        if (start // stride) % 10 == 0:
+            sys.stdout.flush()
 
         end = start + context_size + stride
         subseq = seq[start:end]
@@ -77,7 +81,7 @@ def main():
 
     device = torch.device("cuda" if torch.cuda.is_available else "cpu")
 
-    evo_model = evo2.Evo2("evo2_7b_base")
+    evo_model = evo2.Evo2(args.model)
     tokenizer = evo_model.tokenizer
     model = evo_model.model.to(device)
 

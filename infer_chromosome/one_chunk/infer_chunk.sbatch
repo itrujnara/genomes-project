@@ -22,4 +22,4 @@ source /users/cn/itrujnara/envs/evo2/bin/activate
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 # script
-python3 /users/cn/itrujnara/genomes-project/infer_chromosome/infer_chunk.py $*
+python3 /users/cn/itrujnara/genomes-project/infer_chromosome/one_chunk/infer_chunk.py $*
