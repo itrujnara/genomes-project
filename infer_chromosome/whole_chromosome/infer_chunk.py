@@ -3,6 +3,7 @@
 import argparse
 from copy import deepcopy
 from functools import wraps
+from pathlib import Path
 import random
 import sys
 from time import perf_counter_ns
@@ -54,13 +55,15 @@ def infer_sliding(model, tokenizer, seq, context_size, stride, device):
         if (start / stride) % 10 == 0:
             sys.stdout.flush()
 
-        end = start + context_size + stride
+        end = min(start + context_size + stride, total_len)
+        target_size = min(stride, end - start)
         subseq = seq[start:end]
         tokens = torch.tensor(tokenizer.tokenize(subseq), dtype=torch.int).to(device).unsqueeze(0)
         
         (logits, _), embeddings = model(tokens, return_embeddings=True, layer_names=["norm"])
-        logits_out[start:start+stride,:] = logits[:,-stride:,:].squeeze(0)
-        embeddings_out[start:start+stride,:] = embeddings["norm"][:,-stride:,:].squeeze(0)
+        available = min(target_size, logits_out.size(0) - start)
+        logits_out[start:start+available,:] = logits[:,-available:,:].squeeze(0)
+        embeddings_out[start:start+available,:] = embeddings["norm"][:,-available:,:].squeeze(0)
         
         del logits, tokens, embeddings
 
@@ -102,10 +105,12 @@ def main():
 
     tensors_probs = {"probs": probs}
     tensors_emb = {"embeddings": embeddings}
+    
+    basepath = Path("/no_backup/rg/itrujnara/infer_chromosome/tensors")
 
-    save_file(tensors_probs, f"tensors/{prefix}_{start}_{end}_probs.safetensors")
+    save_file(tensors_probs, basepath / f"{prefix}_{start}_{end}_probs.safetensors")
 
-    save_file(tensors_emb, f"tensors/{prefix}_{start}_{end}_embeddings.safetensors")
+    save_file(tensors_emb, basepath / f"{prefix}_{start}_{end}_embeddings.safetensors")
 
     print(logits.shape)
 

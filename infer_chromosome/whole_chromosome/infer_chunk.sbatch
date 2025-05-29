@@ -3,7 +3,7 @@
 #SBATCH --output=/users/cn/itrujnara/genomes-project/logs/%j.out
 #SBATCH --error=/users/cn/itrujnara/genomes-project/logs/%j.err
 #
-#SBATCH --time=60
+#SBATCH --time=30
 #SBATCH --mem=40G
 #SBATCH --qos=vshort
 #SBATCH --partition=gpu
