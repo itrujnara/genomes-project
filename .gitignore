@@ -26,3 +26,4 @@ random_genes/primate/ncbi_dataset.zip
 **/*.safetensors
 infer_chromosome/ch38_data
 notebooks/sliding_window.ipynb
+infer_chromosome/compare_gff/gencode.v48.basic.annotation.*
