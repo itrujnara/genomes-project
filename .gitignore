@@ -1,5 +1,6 @@
 # data files
 **/*.fa
+!infer_chromosome/one_chunk/random_chunk.fa
 **/*.fna
 **/*.pq
 **/*.safetensors
