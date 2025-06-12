@@ -8,7 +8,7 @@ import random
 import sys
 from time import perf_counter_ns
 
-from Bio import SeqIO
+from Bio.Seq import Seq
 import evo2
 import polars as pl
 from safetensors.torch import save_file
@@ -24,6 +24,8 @@ def make_parser():
     parser.add_argument("--context", type=int, default=8192, help="Context size")
     parser.add_argument("--stride", type=int, default=512, help="Sliding window stride")
     parser.add_argument("--prefix", default="evo", help="Prefix for file disambiguation")
+    parser.add_argument("--revcomp", action="store_true", help="Use reverse complement")
+    parser.add_argument("--save_embedding", action="store_true", help="Save last layer embeddings")
 
     return parser
 
@@ -90,6 +92,8 @@ def main():
     df = pl.scan_parquet(args.parquet)
     df_filtered = df.filter(pl.col("id") == target_id).collect()
     seq = df_filtered[0]["sequence"].item()
+    if args.revcomp:
+        seq = str(Seq(seq).reverse_complement())
     _,start,end = df_filtered[0]["description"].item().split(':')
 
     logits, embeddings = infer_sliding(
@@ -101,6 +105,10 @@ def main():
                 device
             )
 
+    if args.revcomp:
+        logits = logits.flip((0,))
+        embeddings = embeddings.flip((0,))
+
     probs = logits[:,(65,67,71,84)].softmax(dim=-1)
 
     tensors_probs = {"probs": probs}
@@ -109,8 +117,9 @@ def main():
     basepath = Path("/no_backup/rg/itrujnara/infer_chromosome/tensors")
 
     save_file(tensors_probs, basepath / f"{prefix}_{start}_{end}_probs.safetensors")
-
-    save_file(tensors_emb, basepath / f"{prefix}_{start}_{end}_embeddings.safetensors")
+    
+    if args.save_embedding:
+        save_file(tensors_emb, basepath / f"{prefix}_{start}_{end}_embeddings.safetensors")
 
     print(logits.shape)
 
