@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""
+This script contains the code from the sliding window notebook.
+
+The notebook compares the results from sliding window runs with different parameters.
+
+The notebook became too large to track due to a large number of plots.
+"""
+
 # In[27]:
 
 
