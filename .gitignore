@@ -45,3 +45,7 @@ infer_chromosome/ch38_data
 # other large files
 notebooks/sliding_window.ipynb
 infer_chromosome/compare_gff/gencode.v48.basic.annotation.*
+infer_chromosome/compare_gff/ENCFF420VPZ.bed
+infer_chromosome/compare_gff/rmsk.tsv.gz
+infer_chromosome/compare_gff/hg19.hipstr_reference.cage.bed
+infer_chromosome/compare_gff/hg38_hipstr_reference.bed
